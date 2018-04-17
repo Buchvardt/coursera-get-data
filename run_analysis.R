@@ -82,3 +82,5 @@ analysis_data <- cbind(tidy_data, all_subjects)
 
 #group by subject and activity then summarise mean of each column
 analysis_data <- analysis_data %>% group_by(subject, activity) %>% summarise_all(funs(mean))
+
+write.table(analysis_data, row.names = FALSE, file = "submission.txt")
