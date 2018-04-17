@@ -1,3 +1,6 @@
+#Setup
+library("tidyverse")
+
 #Explore dir
 # > list.dirs()
 # [1] "."                                        "./UCI HAR Dataset"                        "./UCI HAR Dataset/test"                  
